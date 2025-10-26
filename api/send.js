@@ -47,7 +47,7 @@ export default async function handler(req, res) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: `${fromName} <no-reply@YOURDOMAIN.com>`, // change to your verified sender
+        from: `${fromName} <onboarding@resend.dev>`, // change to your verified sender
         to: [to],
         subject,
         html: `<p>Hi ${name ? name.split(' ')[0] : ''},</p><p>Your contact card is attached.</p><p>— ${fromName}</p>`,
